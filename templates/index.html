@@ -1,13 +1,16 @@
 <head>
-    <meta name="viewport" content = "width=device-width,initial-sclaed=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
 </head>
 
 <body>
     <div class="container">
         <h2>Financial Web Application</h2>
-            <form action="/prediction" method="post">
-                <input type="submit" value="Share Price Prediction">
-            </form>
+        <form action="/prediction" method="post">
+            <input type="submit" value="Share Price Prediction">
+        </form>
+        <form action="/sentiment_analysis" method="post">
+            <input type="submit" value="Sentiment Analysis">
+        </form>
     </div>
 </body>
